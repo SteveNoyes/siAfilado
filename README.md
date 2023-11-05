@@ -40,7 +40,23 @@ User should be able to:
 ### Code Highlight
 
 ```cs
-Console.WriteLine("Hello, Steven!");
+class IthinkThisCanBeCalledAnything {
+  // main method
+  static void Main(string[] args)
+  {
+
+    string first = "Lorem";
+    string last = "Ipsum";
+
+    // string concatenation
+    string name = first + " " + last;
+    Console.WriteLine(name); // => Lorem Ipsum
+
+    // sting interpolation
+    string nameInterpolated = $"{first} {last}";
+    Console.WriteLine(nameInterpolated);
+  }
+}
 ```
 
 ```bash
@@ -51,7 +67,7 @@ dotnet build
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- build the command line   
 
 ### Useful resources
 

@@ -5,7 +5,7 @@
 
 // Data Types
 
-// int intNum = 9;
+// int intNum = 9;                    Integer value
 // long longNum = 9999999;            64 bit signed integer
 // float floatNum = 9.99F;            Floating point number
 // double doubleNum = 99.999;         64-bit floating-point
@@ -21,20 +21,30 @@
 // var str = "999";
 // var bo = false;
 
-class IthinkThisCanBeCalledAnything {
+class AskForUserInput {
   // main method
   static void Main(string[] args)
   {
 
-    string first = "Lorem";
-    string last = "Ipsum";
+    string first = "To sign up for our newsletter";
+    string second = "fill out the large form on the next page";
+    string last = "and we'll send you a ton of feedback, all the time";
+    string nonRelease = "what unsubscribe button";
 
     // string concatenation
-    string name = first + " " + last;
-    Console.WriteLine(name); // => Lorem Ipsum
+    string name = first + " " + second;
+    Console.WriteLine(name);
 
     // sting interpolation
-    string nameInterpolated = $"{first} {last}";
+    string nameInterpolated = $"{last} {nonRelease}";
     Console.WriteLine(nameInterpolated);
+
+    Console.WriteLine("Please enter a number to reach you at:");
+    if(int.TryParse(Console.ReadLine(),out int input))
+    {
+      // Input validated
+      Console.WriteLine($"You entered {input}");
+    }
   }
+
 }
